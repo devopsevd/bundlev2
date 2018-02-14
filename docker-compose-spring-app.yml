@@ -1,0 +1,12 @@
+version: '2'
+
+networks:
+  default:
+    external:
+      name: bundlev2_prodnetwork
+
+services:
+  tomcat:
+    image: devopsevd/simple_spring_app
+    ports:
+      - 15000:10000
